@@ -1,0 +1,39 @@
+.app-container {
+  display: flex;
+}
+
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-items li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-items li.active {
+  background-color: #ccc;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+canvas {
+  border: 1px solid #121111; /* Change color and thickness as desired */
+  background-color: rgb(102, 214, 102);
+}
