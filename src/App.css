@@ -35,5 +35,120 @@
 
 canvas {
   border: 1px solid #121111; /* Change color and thickness as desired */
-  background-color: rgb(102, 214, 102);
+  background-image: url('C:\Users\kalpa\Documents\javascript\game-plan\src\assets\soccer-field.png');
+  background-size: 920px 480px; /* Stretch image to cover the canvas */
+}
+
+.canvas {
+ 
+  width: 330px;
+  height: 360px;
+}
+
+
+
+/* styles for football pitch */
+
+#pitchcontainer{
+  width: 85%;
+  height: 60%;
+  margin: 0 auto;
+  padding: 0.5% 0 0.5% 0;
+  border: 0;
+  background: rgb(176,255,138);
+  background: linear-gradient(45deg, rgba(176,255,138,1) 0%, rgba(254,207,246,1) 100%);
+  position: relative;
+  
+  -webkit-box-shadow: 4px 2px 8px -1px rgba(115,115,115,1);
+  -moz-box-shadow: 4px 2px 8px -1px rgba(115,115,115,1);
+  box-shadow: 4px 2px 8px -1px rgba(115,115,115,1);
+}
+
+#linecontainer{
+  z-index: 99;
+  background-size: 100% 20vmin;
+  border:solid 3px #979797;
+  height:90%;
+  position:absolute;
+  left: 5%;
+  width:90%;
+  margin: 5% auto;
+}
+
+#pitch{
+  z-index: 100;
+  background-size: 100% 20vmin;
+  border:solid 3px #979797;
+  height:90%;
+  position:absolute;
+  left: 5%;
+  width:90%;
+  margin: 5% auto;
+}
+
+.top-box {
+  border:solid 1px #fff;
+  border-top: none;
+  bottom: 80%;
+  left:15%;
+  position:absolute;
+  right:15%;
+  top:00%;
+}
+
+.top-box:before {
+  border-bottom:solid 1px #fff;
+  border-radius:0 0 70% 70%;
+  bottom:-24%;
+  content:"";
+  height:40%;
+  left:30%;
+  position:absolute;
+  right:30%;
+}
+
+.bottom-box {
+  border:solid 1px #fff;
+  border-bottom: none;
+  bottom:0;
+  left:15%;
+  position:absolute;
+  right:15%;
+  top:80%;
+}
+
+.bottom-box:before {
+  border-top:solid 1px #fff;
+  border-radius:70% 70% 0 0;
+  content:"";
+  height:60%;
+  width: 40%;
+  left:30%;
+  position:absolute;
+  right:30%;
+  top: -24%;
+}
+
+.centre-circle {
+  border:solid 1px #fff;
+  border-radius:100%;
+  bottom:40%;
+  left:35%;
+  position:absolute;
+  right:35%;
+  top:40%;
+}
+
+.centre-line {
+  border-bottom:solid 1px #fff;
+  bottom:50%;
+  left:0;
+  position:absolute;
+  right:0;
+  top:50%;
+}
+
+.line, .line:before{
+  border-color: #979797;
+  border-width: 3px;
 }
