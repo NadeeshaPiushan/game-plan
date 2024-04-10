@@ -35,7 +35,7 @@
 
 canvas {
   border: 1px solid #121111; /* Change color and thickness as desired */
-  background-image: url('C:\Users\kalpa\Documents\javascript\game-plan\src\assets\soccer-field.png');
+  background-image: url('/soccer-field.png');
   background-size: 920px 480px; /* Stretch image to cover the canvas */
 }
 

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import DrawingBoard from './components/DrawingBoard';
 import Sidebar from './components/Sidebar';
 import DrawingContext from './components/DrawingContext'; // Import the Context
-import './App.css'; 
+import './App.css';
 
 function App() {
   const [strokeColor, setStrokeColor] = useState('black');
