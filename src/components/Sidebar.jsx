@@ -1,7 +1,11 @@
 import React, { useState, useContext } from 'react';
 import DrawingContext from './DrawingContext.jsx';
+import Players from './Players.jsx';
+
 
 const Sidebar = ({ onColorChange, onLineWidthChange }) => {
+ 
+  // previous code
   const { strokeColor, lineWidth, setStrokeColor, setLineWidth } = useContext(DrawingContext);
 
   const handleColorClick = (color) => {
@@ -22,6 +26,8 @@ const Sidebar = ({ onColorChange, onLineWidthChange }) => {
       <button onClick={() => handleColorClick('blue')}>Blue</button>
       <h2>Line Width</h2>
       <input type="number" value={lineWidth} onChange={handleLineWidthChange} />
+      {/*here are the list of players for drag and drop*/}
+      <Players />
     </div>
   );
 };

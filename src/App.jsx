@@ -5,7 +5,9 @@ import Sidebar from './components/Sidebar';
 import DrawingContext from './components/DrawingContext'; // Import the Context
 import './App.css';
 
+
 function App() {
+  // previous code
   const [strokeColor, setStrokeColor] = useState('black');
   const [lineWidth, setLineWidth] = useState(3);
 
@@ -20,10 +22,10 @@ function App() {
     <DrawingContext.Provider value={value}>
       <div className="app-container App">
         <div className="sidebar">
-        <Sidebar />
+          <Sidebar />
         </div>
         <div className="main-content">
-        <DrawingBoard />          
+          <DrawingBoard />          
         </div>
       </div>
     </DrawingContext.Provider>

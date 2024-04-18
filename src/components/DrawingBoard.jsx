@@ -1,13 +1,17 @@
-import React, { useContext, useRef, useState } from 'react';
+import React, { useContext, useRef, useState, } from 'react';
 import DrawingContext from './DrawingContext';
 
+
 function DrawingBoard() {
+  //rest of the previous code
   const canvasRef = useRef(null);
   const { strokeColor, lineWidth, } = useContext(DrawingContext);
 
   const [isDrawing, setIsDrawing] = useState(false);
   const [lastX, setLastX] = useState(0);
   const [lastY, setLastY] = useState(0);
+
+  
  
 
   const startDrawing = (e) => {

@@ -152,3 +152,24 @@ canvas {
   border-color: #979797;
   border-width: 3px;
 }
+
+
+/* styles for nametag component  */
+
+.name-tag {
+  position: absolute;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+  cursor: move;
+}
+
+.name-tag.team-1 {
+  background-color: lightblue;
+}
+
+.name-tag.team-2 {
+  background-color: light
+}  
