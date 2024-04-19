@@ -51,7 +51,7 @@ function DrawingBoard() {
   return (
     <div className="container">
       <div className="main-content">
-        <canvas ref={canvasRef} onMouseDown={startDrawing} onMouseMove={draw} onMouseUp={endDrawing} width="920" height="480" style={{ position: 'absolute' }} />
+        <canvas ref={canvasRef} onMouseDown={startDrawing} onMouseMove={draw} onMouseUp={endDrawing} width="920" height="480" style={{ position: 'absolute', zIndex: '0'}} />
       </div>
     </div>
   );

@@ -3,16 +3,10 @@ import Draggable, {DraggableCore} from "react-draggable";
 
 
 function NumberCard({ number, color, onDelete }) {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  const handleDrag = (event, data) => {
-    setPosition({ x: data.x, y: data.y });
-  };
-
   let cardStyle = {
     backgroundColor: color, // Dynamically set based on color prop
     borderRadius: '10px',
-    width: '30px',
+    width: '50px',
     boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
     textAlign: 'center',
     cursor: 'grab',
@@ -20,9 +14,9 @@ function NumberCard({ number, color, onDelete }) {
 
   return (
     <Draggable>
-    <div>
+    <div style={{position: 'relative', zIndex:'10', width: '50px'}}>
         <div style={cardStyle}>{number}</div>
-        <button onClick={onDelete}>Delete</button>
+        <button onClick={onDelete}>x</button>
     </div>
     </Draggable>
   );
@@ -45,34 +39,38 @@ function Players() {
   };
 
   const deleteCard = (index) => {
-    const updatedCards = [...cards];
-    updatedCards.splice(index, 1);
+    const updatedCards = [...cards]; // Copy the cards array
+    updatedCards.splice(index, 1)
     setCards(updatedCards);
+    
   };
 
   return (
-
-
     <div style={{marginTop: '10px'}}>
       <h2>Players</h2>
+      {/* input the number for numbercard */}
       <input
         type="number"
         value={number}
         onChange={handleNumberChange}
         placeholder="Enter a number"
       />
+
+      {/* select the color for the numbercard */}
       <select value={selectedColor} onChange={(event) => setSelectedColor(event.target.value)}>
         <option value="blue">Blue</option>
-        <option value="green">Green</option>
+        <option value="pink">Pink</option>
       </select>
+      {/* adding the numbercard below */}
       <button onClick={addNumberCard}>Add Number Card</button>
+      
       <div className="cards-container">
         {cards.map((card, index) => (
           <NumberCard
             key={index}
             number={card.number}
             color={card.color}
-            onDelete={() => deleteCard(index)}
+            onDelete={() => deleteCard()}
           />
         ))}
       </div>
