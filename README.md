@@ -1,9 +1,5 @@
-# React + Vite
+# Soccer Tactic Board Made with the Help of Gemini(Goodle) and ChatGPT(OpenAI) LLMs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ever since I had the idea of creating something for sports using technology back in university while studying Sports Science, I wanted to build this project. However, my lack of coding knowledge held me back. After learning the basics of web development and with the support of Large Language Models (LLMs), I was able to create a foundational version of this project. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# game-plan" 
+The exciting potential of AI-assisted development is that if someone with limited programming experience can achieve this with React, imagine what skilled programmers could accomplish!
